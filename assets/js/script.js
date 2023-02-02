@@ -148,3 +148,9 @@ function initMap() {
       ]
     });
 }
+
+var launchBtn = document.getElementById("launch-popup");
+
+launchBtn.addEventListener("click",function(){
+  $('#popup').modal('show');
+})

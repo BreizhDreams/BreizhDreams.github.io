@@ -1,0 +1,49 @@
+#popupStyle{
+    background-color: lightgray;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+#popupCarousel{
+    display: inline-block;
+    background-color: lightgray;
+    position:relative;
+    width: 68%;
+    height: 98%;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+
+}
+
+#popupDescr{
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    width: 24%;
+    height: 78%;
+    margin-left: 0.5%;
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+
+}
+
+.descTitle{
+    padding: 25px;
+    width: 100%;
+}
+
+.descProjet{
+    background-color: green;
+    width: 100%;
+    height: 15px;
+}
+
+.TechUsed{
+    background-color: greenyellow;
+    width: 100%;
+    height: 15px;
+}
