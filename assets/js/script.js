@@ -149,8 +149,13 @@ function initMap() {
     });
 }
 
-var launchBtn = document.getElementById("launch-popup");
+var launchBtn = document.getElementsByClassName("launch-popup");
+var launchBtn2 = document.getElementsByClassName("launch-popup2");
 
 launchBtn.addEventListener("click",function(){
   $('#popup').modal('show');
+})
+
+launchBtn2.addEventListener("click",function(){
+  $('#popup2').modal('show');
 })
