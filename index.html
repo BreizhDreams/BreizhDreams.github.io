@@ -17,20 +17,6 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <header class="header">
         <div class="container">
-            <!--
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github"
-                            aria-hidden="true"></i></a></li>
-            </ul>
-            -->
             <div class="header-content">
                 <h4 class="header-subtitle">Je me présente,</h4>
                 <h1 class="header-title">François Besnard</h1>
@@ -74,7 +60,7 @@
                         <a href="#portfolio" class="nav-link">Certifications</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#blog" class="nav-link">Veille</a>
+                        <a href="#veille" class="nav-link">Veille Technologique</a>
                     </li>
                 </ul>
             </div>
@@ -308,8 +294,8 @@
                             <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h4 class="text-danger font-weight-bold font40">IDE</h4>
-                            <p class="text-light mb-1">Visual Studio<br> Visual Studio Code</p>
+                            <h4 class="text-danger font-weight-bold font40">Environnement</h4>
+                            <p class="text-light mb-1">Visual Studio<br> Visual Studio Code<br> PHPMyAdmin</p>
                         </div>
                     </div>
                 </div>
@@ -764,10 +750,43 @@
     </section>
     <!-- End of portfolio section -->
 
-    <section class="section" id="blog">
+    <section class="section" id="veille">
         <div class="container">
             <h2 class="mb-5">Ma <span class="text-danger">Veille Technologique</span></h2>
             <div class="row">
+                <div class="blog-card" style="height: 250px;">
+                    <div class="img-holder">
+                        <img src="assets/imgs/php.png"
+                            alt="logo php">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Sites de Références</h6>
+                        <span class="line mb-5"></span>
+                        <p> Lorsque j'ai un doute, je me réfère aux différents sites de 
+                            références des langages que j'utilise. Le site que j'utilise le 
+                            plus régulièrement est le site Developper Mozilla qui propose une documentation
+                            très riche concernant des langages tel que JavaScript, Html et CSS. 
+                            J'utilise également le site du langage PHP qui propose une documentation de qualité. 
+                        </p>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <div class="blog-card" style="height: 250px;">
+                    <div class="img-holder">
+                        <img src="assets/imgs/youtube.png"
+                            alt="logo youtube">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Youtube</h6>
+                        <span class="line mb-5"></span>
+                        <p> Je suis régulièrement quelques youtubeurs spécialisé en Informatique et/ou
+                            Cybersécurité. Je suis la chaine Underscore qui propose des sujets d'actualités 
+                            dans le domaine de l'informatique et de la cybersécurité. Je suis également Benjamin Code qui 
+                            propose des vidéos plutot orienté Front-End. Lorsque j'ai besoin de me former 
+                            autour d'un langage/framework en particulier, je 
+                            me tourne vers la chaine Grafikart qui propose beaucoup de "tutoriels". 
+                        </p>
+                    </div>
+                </div><!-- end of blog wrapper -->
                 <div class="blog-card" style="height: 250px;">
                     <div class="img-holder">
                         <img src="assets/imgs/googleAlert.png"
@@ -782,6 +801,7 @@
                             sur les supports technologique que j'utilise. Je reçois ainsi sur ma
                             boite mail régulièrement les dernières publications de l'ANSSI sur les
                             dernières CVE sortis sur iOS et Windows.
+                    
                         </p>
                     </div>
                 </div><!-- end of blog wrapper -->
