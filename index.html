@@ -9,6 +9,7 @@
     <title>François BESNARD - Mon Portfolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
     <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/page.css">
@@ -20,9 +21,7 @@
             <div class="header-content">
                 <h4 class="header-subtitle">Je me présente,</h4>
                 <h1 class="header-title">François Besnard</h1>
-                <h6 class="header-mono">Etudiant en Développement</h6>
-                <a href="./assets/imgs/sdc_besnard_francois.pdf"><button class="btn btn-primary btn-rounded"><i
-                            class="ti-printer pr-2"></i>Synthèse de Compétences</button></a>
+                <!--<h6 class="header-mono">Etudiant en Développement</h6>-->
             </div>
         </div>
     </header>
@@ -84,7 +83,7 @@
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
                     <li><span>Email</span> : fbesnard.ledantec@gmail.com</li>
-                    <li><span>Ville</span> : Lannion</li>
+                    <li><span>Ville</span> : Lannion ou Loudéac</li>
                 </ul>
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link"
@@ -92,11 +91,6 @@
                                 aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link" href="https://github.com/BreizhDreams"><i
                                 class="ti-github" aria-hidden="true"></i></a></li>
-                    <!--
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google"
-                                aria-hidden="true"></i></a></li>
-                                -->
-
                 </ul>
             </div>
             <div class="col-lg-4 about-card">
@@ -119,9 +113,13 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Commerce</h6>
+                        <h6>Marketing</h6>
                         <hr>
                     </div>
+                </div>
+                <div class="mt-3 ml-;" style="position: absolute;">
+                    <a href="./assets/imgs/sdc_besnard_francois.pdf"><button class="btn btn-primary btn-rounded"><i
+                        class="ti-printer pr-2"></i>Synthèse de Compétences</button></a>
                 </div>
             </div>
         </div>
@@ -273,7 +271,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h4 class="text-danger font-weight-bold font40">OS</h4>
-                            <p class="text-light mb-1">Windows <br>Linux</p>
+                            <p class="text-light mb-1">Windows <br>Linux <br> iOS / MacOS <br> Android</p>
                         </div>
                     </div>
                 </div>
@@ -284,7 +282,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h4 class="text-danger font-weight-bold font40">Frameworks</h4>
-                            <p class="text-light mb-1"> Knockout JS<br>MAUI <br> Symfony</p>
+                            <p class="text-light mb-1"> Knockout JS<br>MAUI <br> Symfony <br> Flutter <br> </p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +293,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h4 class="text-danger font-weight-bold font40">Environnement</h4>
-                            <p class="text-light mb-1">Visual Studio<br> Visual Studio Code<br> PHPMyAdmin</p>
+                            <p class="text-light mb-1">Visual Studio<br> Visual Studio Code<br> PHPMyAdmin <br>PostgreSQL</p>
                         </div>
                     </div>
                 </div>
@@ -328,7 +326,7 @@
                         </div>
                         <div class="col-7 text-left py-3">
                             <h4 class="text-danger font-weight-bold font40">Programmation</h4>
-                            <p class="text-light mb-1">POO<br> Utilisation d'API</p>
+                            <p class="text-light mb-1">POO<br>API</p>
                         </div>
                     </div>
                 </div>
@@ -338,17 +336,23 @@
 
     <section class="section" id="service">
         <div class="container">
-            <h2 class="mb-5 pb-4">Mes <span class="text-danger">Projets</span> </h2>
+            <h2 class="mb-5">Mes <span class="text-danger">Projets</span> </h2>
             <h3 class="mb-5 text-dark text-center">Projets<span class="text-danger"> Scolaire</span> </h3>
             <div class="row">
-                <!-- LE METIER DE CHEF DE PROJET-->
                 <div id="launch-popup" class="cursor col-md-4 col-sm-6">
                     <div class="card mb-5">
                         <div class="card-header has-icon">
                             <i class="ti-vector text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Le Métier de chef de Projet</h5>
+                            <h5 class="card-title text-dark">Le métier de chef de projet</h5>
+                            <div>
+                                <p class="mb-4"> Durée : 1 mois </p>
+                                <span>
+                                    <i class="devicon-html5-plain-wordmark m-2" style="font-size:400%"></i>
+                                    <i class="devicon-css3-plain-wordmark m-2" style="font-size:400%"></i>                       
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -357,53 +361,54 @@
                         <div id="popupCarousel">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="/assets/imgs/CertifCisco.png" alt="image n1" class="popupImage">
-                                    <div class="carousel-caption popupImageText">
-                                      <h6>Image Numero 1</h6>
+                                    <div class="carousel-item active">
+                                        <img src="/assets/imgs/CertifCisco.png" alt="image n1" class="popupImage">
+                                        <div class="carousel-caption popupImageText">
+                                            <h6>Image Numero 1</h6>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/imgs/googleAlert.png" alt="image n2" class="popupImage">
-                                    <div class="carousel-caption popupImageText">
-                                      <h6>Image Numero 2</h6>
+                                    <div class="carousel-item">
+                                        <img src="/assets/imgs/googleAlert.png" alt="image n2" class="popupImage">
+                                        <div class="carousel-caption popupImageText">
+                                            <h6>Image Numero 2</h6>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
                                 </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
                                 </a>
-                              </div>
+                            </div>
                         </div>
                         <div id="popupDescr">
                             <span>
                                 <h3 class="titlePopup">Le Métier de chef de Projet</h3>
                             </span>
-                            <div  class="descProjet">
+                            <div class="descProjet">
                                 <h5 class="subtitlePopup">Le projet :</h5>
                                 <span class="line" style="margin-bottom: 10px;"></span>
-                                <p>L'objectif du projet était de créer un site internet statique présentant 
-                                    un métier ayant un rapport avec l'informatique. Chaque élève choisissait 
-                                    un métier qu'il présentait de la façon dont il le souhaitait et à la fin, 
+                                <p>L'objectif du projet était de créer un site internet statique présentant
+                                    un métier ayant un rapport avec l'informatique. Chaque élève choisissait
+                                    un métier qu'il présentait de la façon dont il le souhaitait et à la fin,
                                     tous les métiers était regrouper sur un seul et unique site.
                                 </p>
                                 <h6 class="subtitlePopup"> Les objectifs : </h6>
                                 <span class="line" style="margin-bottom: 10px;"></span>
                                 <p>Découvertes des bases de HTML et CSS et commencer à prendre en main l'IDE </p>
-                                <h6 class="subtitlePopup"> Les technologies utilisées : </h6>
+                                <h6 class="subtitlePopup"> Technologies utilisées : </h6>
                                 <span class="line" style="margin-bottom: 10px;"></span>
                                 <ul>
                                     <li> HTML </li>
                                     <li> CSS </li>
                                 </ul>
-                                <h6 class="subtitlePopup"> Durée du projet : </h6>
+                                <h6 class="subtitlePopup"> Durée : 1 mois </h6>
                                 <span class="line" style="margin-bottom: 10px;"></span>
-                                <P class="subtitle"> Durée : Environ 1 mois</P>
                             </div>
                             <div class="buttonClosed">
                                 <button type="button" class="btn btn-danger ">Fermer</button>
@@ -411,21 +416,21 @@
                         </div>
                     </div>
                 </div>
-                <!-- FIN PROJET METIER -->
-                <!-- PROJET INTEGRATION METIER -->
                 <div id="launch-popup2" class="cursor col-md-4 col-sm-6">
                     <div class="card mb-5">
                         <div class="card-header has-icon">
                             <i class="ti-vector text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Intégration Site Métier </h5>
-                            <P class="subtitle">L'objectif de ce projet était de réaliser un site internet de
-                                partage
-                                de fiche métier liés à l'informatique. Différents types d'utilisateurs
-                                (contributeurs,
-                                administrateurs, lecteurs) pouvaient accéder au site.
-                            </P>
+                            <h5 class="mb-3 card-title text-dark"> Forum des Métiers </h5>
+                            <div>
+                                <p class="mb-4"> Durée : 2 mois </p>
+                                <span style="width: 100%;">
+                                    <i class="devicon-html5-plain-wordmark m-2" style="font-size: 400%"></i>
+                                    <i class="devicon-css3-plain-wordmark m-2" style="font-size:400%"></i>
+                                    <i class="devicon-php-plain colored m-2" style="font-size:400%"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -434,53 +439,54 @@
                         <div id="popupCarousel">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="/assets/imgs/CertifCisco.png" alt="image n1" class="popupImage">
-                                    <div class="carousel-caption popupImageText">
-                                      <h6>Image Numero 1</h6>
+                                    <div class="carousel-item active">
+                                        <img src="/assets/imgs/CertifCisco.png" alt="image n1" class="popupImage">
+                                        <div class="carousel-caption popupImageText">
+                                            <h6>Image Numero 1</h6>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/imgs/googleAlert.png" alt="image n2" class="popupImage">
-                                    <div class="carousel-caption popupImageText">
-                                      <h6>Image Numero 2</h6>
+                                    <div class="carousel-item">
+                                        <img src="/assets/imgs/googleAlert.png" alt="image n2" class="popupImage">
+                                        <div class="carousel-caption popupImageText">
+                                            <h6>Image Numero 2</h6>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
                                 </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
                                 </a>
-                              </div>
+                            </div>
                         </div>
                         <div id="popupDescr">
                             <span>
                                 <h3 class="titlePopup">Le Métier de chef de Projet</h3>
                             </span>
-                            <div  class="descProjet">
+                            <div class="descProjet">
                                 <h5 class="subtitlePopup">Le projet :</h5>
                                 <span class="line" style="margin-bottom: 10px;"></span>
-                                <p>L'objectif du projet était de créer un site internet statique présentant 
-                                    un métier ayant un rapport avec l'informatique. Chaque élève choisissait 
-                                    un métier qu'il présentait de la façon dont il le souhaitait et à la fin, 
+                                <p>L'objectif du projet était de créer un site internet statique présentant
+                                    un métier ayant un rapport avec l'informatique. Chaque élève choisissait
+                                    un métier qu'il présentait de la façon dont il le souhaitait et à la fin,
                                     tous les métiers était regrouper sur un seul et unique site.
                                 </p>
                                 <h6 class="subtitlePopup"> Les objectifs : </h6>
                                 <span class="line" style="margin-bottom: 10px;"></span>
                                 <p>Découvertes des bases de HTML et CSS et commencer à prendre en main l'IDE </p>
-                                <h6 class="subtitlePopup"> Les technologies utilisées : </h6>
+                                <h6 class="subtitlePopup"> Technologies utilisées : </h6>
                                 <span class="line" style="margin-bottom: 10px;"></span>
                                 <ul>
                                     <li> HTML </li>
                                     <li> CSS </li>
                                 </ul>
-                                <h6 class="subtitlePopup"> Durée du projet : </h6>
+                                <h6 class="subtitlePopup"> Durée : 1 mois </h6>
                                 <span class="line" style="margin-bottom: 10px;"></span>
-                                <P class="subtitle"> Durée : Environ 1 mois</P>
                             </div>
                             <div class="buttonClosed">
                                 <button type="button" class="btn btn-danger ">Fermer</button>
@@ -488,8 +494,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- FIN PROJET INTEGRATION METIER-->
-                <!-- PROJET RESEAU EGNARO -->
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <div class="card mb-5">
@@ -497,20 +501,21 @@
                                 <i class="ti-package text-danger" aria-hidden="true"></i>
                             </div>
                             <div class="card-body px-4 py-3">
-                                <h5 class="mb-3 card-title text-dark">Réseau</h5>
-                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-                                    commodi
-                                    provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt!
-                                    In
-                                    praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                                    suscipit
-                                    blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                                <h5 class="mb-3 card-title text-dark">EGNARO</h5>
+                                <div>
+                                    <p class="mb-0"> Durée : 3 mois </p>
+                                    <p class="mb-0"> Technologies utilisées : </p>
+                                    <ul>
+                                        <li> Linux </li>
+                                        <li> Shell </li>
+                                        <li> VirtualBox </li>
+                                        <li> WinSCP </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!-- FIN PROJET EGNARO-->
-                <!-- PROJET GESTION DES STAGES -->
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <div class="card mb-5">
@@ -518,20 +523,21 @@
                                 <i class="ti-map-alt text-danger" aria-hidden="true"></i>
                             </div>
                             <div class="card-body px-4 py-3">
-                                <h5 class="mb-3 card-title text-dark">Gestion des Stages</h5>
-                                <P class="subtitle">Le but de ce projet était de disposer d’un site web accessible par
-                                    l’équipe
-                                    pédagogique et les étudiants pour suivre la recherche de stages, les stages et les
-                                    visites
-                                    finales des stages.
-                                </P>
+                                <h5 class="mb-3 card-title text-dark">Stages SIO</h5>
+                                <div>
+                                    <p class="mb-4"> Durée : 4 mois </p>
+                                    <span>
+                                        <i class="devicon-html5-plain-wordmark m-2" style="font-size:400%"></i>
+                                        <i class="devicon-css3-plain-wordmark m-2" style="font-size:400%"></i>
+                                        <i class="devicon-php-plain colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-mysql-plain colored m-2" style="font-size:400%"></i>                            
+                                    </span>
+                                </div>
                             </div>
 
                         </div>
                     </a>
                 </div>
-                <!-- FIN PROJET GESTION DES STAGES -->
-                <!-- PROJET APPLI MOBILE ENCHERES-->
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <div class="card mb-5">
@@ -539,19 +545,19 @@
                                 <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
                             </div>
                             <div class="card-body px-4 py-3">
-                                <h5 class="mb-3 card-title text-dark">Application Mobile d'Enchères</h5>
-                                <P class="subtitle">Le but de ce projet était de créer une application mobile sous MAUI
-                                    qui
-                                    permettait
-                                    à l'entreprise GSB de mettre en vente leurs différentes figurines sous forme
-                                    d'enchères.
-                                </P>
+                                <h5 class="mb-3 card-title text-dark">Espère Enchére</h5>
+                                <div>
+                                    <p class="mb-4"> Durée : 4 mois </p>
+                                    <span>
+                                        <i class="devicon-csharp-plain colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-android-plain colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-apple-original colored m-2" style="font-size:400%"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!-- FIN PROJET APPLI ENCHERES-->
-                <!-- PROJET SYMFONY ? -->
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <div class="card mb-5">
@@ -559,23 +565,22 @@
                                 <i class="ti-support text-danger" aria-hidden="true"></i>
                             </div>
                             <div class="card-body px-4 py-3">
-                                <h5 class="mb-3 card-title text-dark">AP Symfony Dernier Semestre</h5>
-                                <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-                                    commodi
-                                    provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt!
-                                    In
-                                    praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores
-                                    suscipit
-                                    blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                                <h5 class="mb-3 card-title text-dark">Motor Store</h5>
+                                <div>
+                                    <p class="mb-4"> Durée: 2 mois </p>
+                                    <span>
+                                        <i class="devicon-php-plain colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-symfony-original-wordmark colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-html5-plain-wordmark m-2" style="font-size:400%"></i>
+                                        <i class="devicon-css3-plain-wordmark m-2" style="font-size:400%"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!-- FIN PROJET SYMFONY -->
             </div>
         </div>
-
-
     </section>
     <section class="section bg-dark py-5">
         <div class="container">
@@ -589,13 +594,15 @@
                             </div>
                             <div class="card-body px-4 py-3">
                                 <h5 class="mb-3 card-title text-light">Application - Réservation de la Coding Room</h5>
-                                <P class="subtitle text-light">
-                                    Dans le cadre de mon stage, j'ai été chargé de poursuivre un projet qui avait été créer 
-                                    par des stagiaires plusieurs années auparavant. Il s'agissait d'une application windows
-                                    et mac aidant les salariés d'Orange Innov à réserver une "coding room" pour l'organisation
-                                    de différents évènements. L'objectif du stage était de faire en sorte que l'application 
-                                    soit fonctionnelles sur android et iOS.
-                                </P>
+                                <div class="card-text">
+                                    <p class="mb-4 text-light" > Durée : 2 mois </p>
+                                    <span>
+                                        <i class="devicon-flutter-plain colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-dart-plain-wordmark colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-android-plain colored m-2" style="font-size:400%"></i>
+                                        <i class="devicon-apple-original colored m-2" style="font-size:400%"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -609,21 +616,20 @@
                             </div>
                             <div class="card-body px-4 py-3">
                                 <h5 class="mb-3 card-title text-light">Application Web - MSurvey</h5>
-                                <P class="subtitle text-light">
-                                    Dans le cadre de mon alternance, je fais partie de l'équipe qui développe l'application MSurvey.
-                                    C'est une application accessible à tous les salariés d'Orange et qui leurs permet de créer des sondages,
-                                    animer des séminaires pour d'autres salariés et également d'envoyer des newsletter à grande échelle. 
-                                </P>
+                                <p class="mb-4 text-light" > Durée : 2 mois </p>
+                                <span>
+                                    <i class="devicon-javascript-plain colored m-2" style="font-size:400%"></i>
+                                    <i class="devicon-knockout-plain-wordmark colored  m-2" style="font-size:400%"></i>
+                                    <i class="devicon-php-plain colored  m-2" style="font-size:400%"></i>
+                                    <i class="devicon-html5-plain-wordmark  m-2" style="font-size:400%"></i>
+                                </span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-
     </section>
-
-    <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
             <h2 class="mb-5">Mes <span class="text-danger">Certifications</span></h2>
@@ -668,8 +674,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 developpement new">
                         <div class="portfolio-item">
-                            <img src="/assets/imgs/CertifPÏX.png" class="img-fluid"
-                                alt="certification pix">
+                            <img src="/assets/imgs/CertifPÏX.png" class="img-fluid" alt="certification pix">
                             <div class="content-holder">
                                 <a class="img-popup" href=""></a>
                                 <div class="text-holder">
@@ -694,8 +699,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 cybersecurity new">
                         <div class="portfolio-item">
-                            <img src="/assets/imgs/CertifCiscoDeb.png" class="img-fluid"
-                                alt="certification cisco">
+                            <img src="/assets/imgs/CertifCiscoDeb.png" class="img-fluid" alt="certification cisco">
                             <div class="content-holder">
                                 <a class="img-popup" href=""></a>
                                 <div class="text-holder">
@@ -718,6 +722,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4 cybersecurity new">
+                        <div class="portfolio-item">
+                            <img src="/assets/imgs/CertifANSSI.png" class="img-fluid"
+                                alt="certification js linkedin learning">
+                            <div class="content-holder">
+                                <a class="img-popup" href=""></a>
+                                <div class="text-holder">
+                                    <h6 class="title">MOOC ANSSI</h6>
+                                    <p class="subtitle">MOOC ANSSI - SecNum Académie</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 developpement new">
                         <div class="portfolio-item">
                             <img src="/assets/imgs/[5]Jquery.jpg" class="img-fluid"
@@ -733,8 +750,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 cybersecurity new">
                         <div class="portfolio-item">
-                            <img src="/assets/imgs/CertifCisco.png" class="img-fluid"
-                                alt="certification cisco">
+                            <img src="/assets/imgs/CertifCisco.png" class="img-fluid" alt="certification cisco">
                             <div class="content-holder">
                                 <a class="img-popup" href=""></a>
                                 <div class="text-holder">
@@ -748,82 +764,77 @@
             </div>
         </div>
     </section>
-    <!-- End of portfolio section -->
-
     <section class="section" id="veille">
         <div class="container">
             <h2 class="mb-5">Ma <span class="text-danger">Veille Technologique</span></h2>
             <div class="row">
                 <div class="blog-card" style="height: 250px;">
                     <div class="img-holder">
-                        <img src="assets/imgs/php.png"
-                            alt="logo php">
+                        <img src="assets/imgs/php.png" alt="logo php">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Sites de Références</h6>
                         <span class="line mb-5"></span>
-                        <p> Lorsque j'ai un doute, je me réfère aux différents sites de 
-                            références des langages que j'utilise. Le site que j'utilise le 
-                            plus régulièrement est le site Developper Mozilla qui propose une documentation
-                            très riche concernant des langages tel que JavaScript, Html et CSS. 
-                            J'utilise également le site du langage PHP qui propose une documentation de qualité. 
+                        <p> Je suis régulièrement quelques youtubeurs spécialisé en Informatique et/ou
+                            Cybersécurité. Je suis la chaine Underscore qui propose des sujets d'actualités
+                            dans le domaine de l'informatique et de la cybersécurité. Je suis également Benjamin Code
+                            qui
+                            propose des vidéos plutot orienté Front-End. Lorsque j'ai besoin de me former
+                            autour d'un langage/framework en particulier, je
+                            me tourne vers la chaine Grafikart qui propose beaucoup de "tutoriels".
                         </p>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
                 <div class="blog-card" style="height: 250px;">
                     <div class="img-holder">
-                        <img src="assets/imgs/youtube.png"
-                            alt="logo youtube">
+                        <img src="assets/imgs/youtube.png" alt="logo youtube">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Youtube</h6>
                         <span class="line mb-5"></span>
                         <p> Je suis régulièrement quelques youtubeurs spécialisé en Informatique et/ou
-                            Cybersécurité. Je suis la chaine Underscore qui propose des sujets d'actualités 
-                            dans le domaine de l'informatique et de la cybersécurité. Je suis également Benjamin Code qui 
-                            propose des vidéos plutot orienté Front-End. Lorsque j'ai besoin de me former 
-                            autour d'un langage/framework en particulier, je 
-                            me tourne vers la chaine Grafikart qui propose beaucoup de "tutoriels". 
+                            Cybersécurité. Je suis la chaine Underscore qui propose des sujets d'actualités
+                            dans le domaine de l'informatique et de la cybersécurité. Je suis également Benjamin Code
+                            qui
+                            propose des vidéos plutot orienté Front-End. Lorsque j'ai besoin de me former
+                            autour d'un langage/framework en particulier, je
+                            me tourne vers la chaine Grafikart qui propose beaucoup de "tutoriels".
                         </p>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
                 <div class="blog-card" style="height: 250px;">
                     <div class="img-holder">
-                        <img src="assets/imgs/googleAlert.png"
-                            alt="alert google">
+                        <img src="assets/imgs/googleAlert.png" alt="alert google">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Alerte Google</h6>
                         <span class="line mb-5"></span>
-                        <p> J'ai mis en place des alertes google afin de me recevoir 
-                            des informations sur les alertes publiés par l'ANSSI. 
-                            Je souhaitais me tenir au courant des différentes failles découvertes 
+                        <p> J'ai mis en place des alertes google afin de me recevoir
+                            des informations sur les alertes publiés par l'ANSSI.
+                            Je souhaitais me tenir au courant des différentes failles découvertes
                             sur les supports technologique que j'utilise. Je reçois ainsi sur ma
                             boite mail régulièrement les dernières publications de l'ANSSI sur les
                             dernières CVE sortis sur iOS et Windows.
-                    
+
                         </p>
                     </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
+                </div>
                 <div class="blog-card" style="height: 250px;">
                     <div class="img-holder">
-                        <img src="assets/imgs/medium.png"
-                            alt="medium logo">
+                        <img src="assets/imgs/medium.png" alt="medium logo">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Medium</h6>
                         <span class="line mb-5"></span>
-                        <p> J'utilise l'application mobile Medium afin de me tenir 
-                            au courant des différentes nouveautés sur la programmation, 
+                        <p> J'utilise l'application mobile Medium afin de me tenir
+                            au courant des différentes nouveautés sur la programmation,
                             l'informatique en général ou sur des langages en particulier.
                             Sur cette application, on peut retrouver des articles qui sont
                             écrit par d'autres utilisateurs selon différents thèmes que
                             l'on aura sélectionner.
                         </p>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
             </div>
         </div>
     </section>
@@ -834,9 +845,9 @@
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Made with  <i
-                    class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span
-                        class="text-danger" title="Bootstrap 4 Themes and Dashboards"> François BESNARD</span></a>
+                <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i>
+                By <a href="http://devcrud.com" target="_blank"><span class="text-danger"
+                        title="Bootstrap 4 Themes and Dashboards"> François BESNARD</span></a>
             </p>
         </div>
     </footer>
