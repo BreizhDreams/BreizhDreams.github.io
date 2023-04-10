@@ -7,10 +7,8 @@
     <meta name="description" content="Portfolio de François BESNARD - Etudiant en BTS SIO option SLAM.">
     <meta name="author" content="Devcrud">
     <title>François BESNARD - Mon Portfolio</title>
-    <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -20,7 +18,6 @@
             <div class="header-content">
                 <h4 class="header-subtitle">Je me présente,</h4>
                 <h1 class="header-title">François Besnard</h1>
-                <!--<h6 class="header-mono">Etudiant en Développement</h6>-->
             </div>
         </div>
     </header>
@@ -34,13 +31,13 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Qui Suis Je ?</a>
+                        <a href="#home" class="nav-link">Qui Suis Je ?</a>
                     </li>
                     <li class="nav-item">
                         <a href="#resume" class="nav-link">Parcours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Projets</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
@@ -52,7 +49,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#service" class="nav-link">Projets</a>
+                        <a href="#technologies" class="nav-link">Technologies</a>
                     </li>
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Certifications</a>
@@ -74,7 +71,7 @@
                     Solutions Logicielles et Applications Métier ). Dans le cadre de ma deuxième année, j’ai été recruté
                     en Alternance chez Orange. Passionnée d’informatique depuis le collège, ce n’est que
                     récemment que j’ai décider de me ré-orienter vers le domaine. </p>
-                <a href="./assets/imgs/cv.pdf"><button class="btn btn-outline-danger"><i
+                <a href="./assets/imgs/cv.pdf" target="_blank"><button class="btn btn-danger btn-rounded"><i
                             class="icon-down-circled2 "></i>Téléchargez mon CV</button></a>
             </div>
             <div class="col-lg-4 about-card">
@@ -86,10 +83,10 @@
                 </ul>
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link"
-                            href="https://www.linkedin.com/in/fran%C3%A7ois-besnard/"><i class="ti-linkedin"
-                                aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/BreizhDreams"><i
-                                class="ti-github" aria-hidden="true"></i></a></li>
+                            href="https://www.linkedin.com/in/fran%C3%A7ois-besnard/" target="_blank"><i
+                                class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/BreizhDreams"
+                            target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="col-lg-4 about-card">
@@ -117,14 +114,13 @@
                     </div>
                 </div>
                 <div class="mt-3 ml-;" style="position: absolute;">
-                    <a href="./assets/imgs/sdc_besnard_francois.pdf"><button class="btn btn-primary btn-rounded"><i
-                                class="ti-printer pr-2"></i>Synthèse de Compétences</button></a>
+                    <a href="./assets/imgs/sdc_besnard_francois.pdf" target="_blank"><button
+                            class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Synthèse de
+                            Compétences</button></a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--Resume Section-->
     <section class="section" id="resume">
         <div class="container">
             <h2 class="mb-5">Mon <span class="text-danger">Parcours</span></h2>
@@ -258,89 +254,63 @@
             </div>
         </div>
     </section>
-
-    <section class="section bg-dark text-center">
-        <h2 class="mb-5 text-light"><span class="text-danger">Technologies </span>Utilisées</h2>
+    <section class="section bg-dark" id="service">
         <div class="container">
+            <h2 class="text-light pb-5">Mes <span class="text-danger">Projets</span> </h2>
+            <h3 class="mb-5 text-light text-center">Projets en <span class="text-danger">Entreprise</span> </h3>
             <div class="row text-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-microsoft icon-xl"></i></div>
+                <div class="col-md-6 col-sm-6">
+                    <a data-toggle="modal" data-target="#modalCodingRoom" style="cursor: pointer;">
+                        <div class="mb-5">
+                            <div class="has-icon">
+                                <i class="ti-blackboard text-danger icon-xl" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <h5 class="mb-3 card-title text-light">Coding Room</h5>
+                                <div class="card-text">
+                                    <p class="text-light mb-0"> Pas de méthode Agile</p>
+                                    <p class="text-light mb-0"> Versionning : GitLab </p>
+                                    <p class="mb-4 text-light"> Durée : 1 mois </p>
+                                    <span>
+                                        <i class="devicon-flutter-plain colored m-2" style="font-size:250%"></i>
+                                        <i class="devicon-dart-plain-wordmark colored m-2" style="font-size:250%"></i>
+                                        <i class="devicon-android-plain colored m-2" style="font-size:250%"></i>
+                                        <i class="devicon-apple-original colored m-2" style="font-size:250%"></i>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-7 text-left py-3">
-                            <h4 class="text-danger font-weight-bold font40">OS</h4>
-                            <p class="text-light mb-1" style="font-size: 18px;">Windows <br>Linux <br> iOS / MacOS <br>
-                                Android</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class=" ti-package  icon-xl"></i></div>
+
+                <div class="col-md-6 col-sm-6">
+                    <a data-toggle="modal" data-target="#modalMSurvey" style="cursor: pointer;">
+                        <div class="mb-5">
+                            <div class=" has-icon">
+                                <i class="ti-calendar text-danger icon-xl" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <h5 class="mb-3 card-title text-light">MSurvey</h5>
+                                <p class="text-light mb-0"> Méthode Agile: Kanban</p>
+                                <p class="text-light mb-0"> Versionning : GitLab </p>
+                                <p class="mb-4 text-light"> Durée : 6 mois et 2 semaines </p>
+                                <span>
+                                    <i class="devicon-javascript-plain colored m-2" style="font-size:250%"></i>
+                                    <i class="devicon-knockout-plain-wordmark colored  m-2" style="font-size:250%"></i>
+                                    <i class="devicon-php-plain colored  m-2" style="font-size:250%"></i>
+                                    <i class="devicon-html5-plain-wordmark  m-2" style="font-size:250%"></i>
+                                </span>
+                            </div>
                         </div>
-                        <div class="col-7 text-left py-3">
-                            <h4 class="text-danger font-weight-bold font40">Frameworks</h4>
-                            <p class="text-light mb-1" style="font-size: 18px;"> Knockout JS<br>MAUI <br> Symfony <br>
-                                Flutter <br> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h4 class="text-danger font-weight-bold font40">Environnement</h4>
-                            <p class="text-light mb-1" style="font-size: 18px;">Visual Studio<br> Visual Studio Code<br>
-                                PHPMyAdmin<br>
-                                PostgreSQL</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class=" ti-github  icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h4 class="text-danger font-weight-bold font40">Versionning</h4>
-                            <p class="text-light mb-1" style="font-size: 18px;">GitHub<br> GitLab</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h3 class="text-danger font-weight-bold font40">Test</h3>
-                            <p class="text-light mb-1" style="font-size: 18px;">SELENIUM <br> INTELLITEST</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-check icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h4 class="text-danger font-weight-bold font40">Programmation</h4>
-                            <p class="text-light mb-1" style="font-size: 18px;">POO<br>API</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section" id="service">
+    <section class="section">
         <div class="container">
-            <h2 class="mb-5">Mes <span class="text-danger">Projets</span> </h2>
             <h3 class="mb-5 text-dark text-center">Projets<span class="text-danger"> Scolaire</span> </h3>
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-4 col-sm-6">
                     <a data-toggle="modal" data-target="#modalChefProjet" style="cursor: pointer;">
                         <div class="card mb-5">
@@ -481,59 +451,86 @@
             </div>
         </div>
     </section>
-    <section class="section bg-dark py-5">
+    <section class="section bg-dark mb-5" id="technologies">
         <div class="container">
-            <h3 class="mb-5 text-light text-center">Projets en <span class="text-danger">Entreprise</span> </h3>
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <a data-toggle="modal" data-target="#modalCodingRoom" style="cursor: pointer;">
-                    <div class="mb-5">
-                        <div class="has-icon">
-                            <i class="ti-blackboard text-danger icon-xl" aria-hidden="true"></i>
+            <h2 class="mb-5 text-light"><span class="text-danger">Technologies </span>Utilisées</h2>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-microsoft icon-xl"></i></div>
                         </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Coding Room</h5>
-                            <div class="card-text">
-                                <p class="text-light mb-0"> Pas de méthode Agile</p>
-                                <p class="text-light mb-0"> Versionning : GitLab </p>
-                                <p class="mb-4 text-light"> Durée : 1 mois </p>
-                                <span>
-                                    <i class="devicon-flutter-plain colored m-2" style="font-size:250%"></i>
-                                    <i class="devicon-dart-plain-wordmark colored m-2" style="font-size:250%"></i>
-                                    <i class="devicon-android-plain colored m-2" style="font-size:250%"></i>
-                                    <i class="devicon-apple-original colored m-2" style="font-size:250%"></i>
-                                </span>
-                            </div>
+                        <div class="col-7 text-left py-3">
+                            <h4 class="text-danger font-weight-bold font40">OS</h4>
+                            <p class="text-light mb-1" style="font-size: 18px;">Windows <br>Linux <br> iOS / MacOS <br>
+                                Android</p>
                         </div>
                     </div>
-                    </a>
                 </div>
-
-                <div class="col-md-6 col-sm-6">
-                    <a data-toggle="modal" data-target="#modalMSurvey" style="cursor: pointer;">
-                    <div class="mb-5">
-                        <div class=" has-icon">
-                            <i class="ti-calendar text-danger icon-xl" aria-hidden="true"></i>
+                <div class="col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class=" ti-package  icon-xl"></i></div>
                         </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">MSurvey</h5>
-                            <p class="text-light mb-0"> Méthode Agile: Kanban</p>
-                            <p class="text-light mb-0"> Versionning : GitLab </p>
-                            <p class="mb-4 text-light"> Durée : 6 mois et 2 semaines </p>
-                            <span>
-                                <i class="devicon-javascript-plain colored m-2" style="font-size:250%"></i>
-                                <i class="devicon-knockout-plain-wordmark colored  m-2" style="font-size:250%"></i>
-                                <i class="devicon-php-plain colored  m-2" style="font-size:250%"></i>
-                                <i class="devicon-html5-plain-wordmark  m-2" style="font-size:250%"></i>
-                            </span>
+                        <div class="col-7 text-left py-3">
+                            <h4 class="text-danger font-weight-bold font40">Frameworks</h4>
+                            <p class="text-light mb-1" style="font-size: 18px;"> Knockout JS<br>MAUI <br> Symfony <br>
+                                Flutter <br> </p>
                         </div>
                     </div>
-                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h4 class="text-danger font-weight-bold font40">Environnement</h4>
+                            <p class="text-light mb-1" style="font-size: 18px;">Visual Studio / Code<br>
+                                PHPMyAdmin<br>
+                                PostgreSQL<br>
+                                BrowserStack
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class=" ti-github  icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h4 class="text-danger font-weight-bold font40">Versionning</h4>
+                            <p class="text-light mb-1" style="font-size: 18px;">GitHub<br> GitLab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h3 class="text-danger font-weight-bold font40">Test</h3>
+                            <p class="text-light mb-1" style="font-size: 18px;">SELENIUM <br> INTELLITEST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-check icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h4 class="text-danger font-weight-bold font40">Programmation</h4>
+                            <p class="text-light mb-1" style="font-size: 18px;">POO<br>API</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section bg-custom-gray" id="portfolio">
+    <section class="section bg-custom-gray mt-5" id="portfolio">
         <div class="container">
             <h2 class="mb-5">Mes <span class="text-danger">Certifications</span></h2>
             <div class="portfolio">
@@ -664,39 +661,40 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <a data-toggle="modal" data-target="#modalSiteReference" style="cursor: pointer;">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon ">
-                            <img class="card-img-top" src="assets/imgs/php.png" alt="logo php" style="size:50%">
+                        <div class="card mb-5">
+                            <div class="card-header has-icon ">
+                                <img class="card-img-top" src="assets/imgs/php.png" alt="logo php" style="size:50%">
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <h6 class="card-text text-center">Site de Référence</h6>
+                            </div>
                         </div>
-                        <div class="card-body px-4 py-3">
-                            <h6 class="card-text text-center">Site de Référence</h6>
-                        </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a data-toggle="modal" data-target="#modalYoutube" style="cursor: pointer;">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon ">
-                            <img class="card-img-top" src="assets/imgs/youtube.png" alt="logo youtube" style="size:50%">
+                        <div class="card mb-5">
+                            <div class="card-header has-icon ">
+                                <img class="card-img-top" src="assets/imgs/youtube.png" alt="logo youtube"
+                                    style="size:50%">
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <h6 class="card-text text-center">YouTube</h6>
+                            </div>
                         </div>
-                        <div class="card-body px-4 py-3">
-                            <h6 class="card-text text-center">YouTube</h6>
-                        </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a data-toggle="modal" data-target="#modalGoogleAlert" style="cursor: pointer;">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon ">
-                            <img class="card-img-top" src="assets/imgs/googleAlert.png" alt="alert google"
-                                style="size:50%">
+                        <div class="card mb-5">
+                            <div class="card-header has-icon ">
+                                <img class="card-img-top" src="assets/imgs/googleAlert.png" alt="alert google"
+                                    style="size:50%">
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <h6 class="card-text text-center">Google Alerts</h6>
+                            </div>
                         </div>
-                        <div class="card-body px-4 py-3">
-                            <h6 class="card-text text-center">Google Alerts</h6>
-                        </div>
-                    </div>
                     </a>
                 </div>
             </div>
@@ -709,15 +707,40 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Le Métier de Chef de Projet</h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel">Le Métier de Chef de Projet</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[1]Prog.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselCDP" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselCDP" data-slide-to="0" class="active" style="color:black"></li>
+                            <li data-target="#carouselCDP" data-slide-to="1"></li>
+                            <li data-target="#carouselCDP" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/CDP/cdp1.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/CDP/cdp2.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/CDP/cdp3.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselCDP" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselCDP" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                     <div>
                         <h6>Compétences abordés </h6>
+                        <p>Développer la présence en ligne de l'organisation</p>
                     </div>
                 </div>
 
@@ -731,15 +754,40 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Forum des Métiers</h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> Forum des Métiers</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselFDM" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselFDM" data-slide-to="0" class="active" style="color:black"></li>
+                            <li data-target="#carouselFDM" data-slide-to="1"></li>
+                            <li data-target="#carouselFDM" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/[1]Prog.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[2]HTML.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[3]CSS.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselFDM" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselFDM" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                     <div>
                         <h6>Compétences abordés </h6>
+                        <p>Gérer le patrimoine informatique</p>
                     </div>
                 </div>
 
@@ -753,15 +801,19 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> EGNARO </h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> EGNARO </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselEgnaro" class="carousel slide" data-ride="carousel">
+                        <img src="/assets/imgs/EGNARO/schemaReseau.jpg" alt="" style="width: 100%; height: auto">
+                    </div>
                     <div>
                         <h6>Compétences abordés </h6>
+                        <p>Gérer le Patrimoine Informatique</p>
+                        <p>Mettre à disposition des utilisateurs un service informatique</p>
                     </div>
                 </div>
 
@@ -775,15 +827,42 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Stages SIO </h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> Stages SIO </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselStageSIO" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselStageSIO" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselStageSIO" data-slide-to="1"></li>
+                            <li data-target="#carouselStageSIO" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/StageSIO/Trello.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/StageSIO/git.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[3]CSS.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselStageSIO" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselStageSIO" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                     <div>
                         <h6>Compétences abordés </h6>
+                        <p>Gérer le patrimoine informatique</p>
+                        <p>Travailler en mode Projet</p>
                     </div>
                 </div>
 
@@ -797,15 +876,42 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Espère Enchére </h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> Espère Enchére </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselEspereEnchere" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselEspereEnchere" data-slide-to="0" class="active"
+                                style="color:black"></li>
+                            <li data-target="#carouselEspereEnchere" data-slide-to="1"></li>
+                            <li data-target="#carouselEspereEnchere" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/[1]Prog.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[2]HTML.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/Encheres/git.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselEspereEnchere" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselEspereEnchere" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                     <div>
                         <h6>Compétences abordés </h6>
+                        <p>Travailler en mode Projet</p>
+                        <p>Mettre à disposition des utilisateurs un service informatique</p>
                     </div>
                 </div>
 
@@ -819,15 +925,41 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> MotorStore </h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> MotorStore </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselMotorStore" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselMotorStore" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselMotorStore" data-slide-to="1"></li>
+                            <li data-target="#carouselMotorStore" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/[1]Prog.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[2]HTML.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/MotorStore/" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselMotorStore" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselMotorStore" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                     <div>
                         <h6>Compétences abordés </h6>
+                        <p>Gérer le patrimoine informatique</p>
                     </div>
                 </div>
 
@@ -835,55 +967,111 @@
         </div>
     </div>
 
-            <!-- POPUP CODING ROOM -->
-            <div class="modal fade" id="modalCodingRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-danger" id="exampleModalLabel"> Coding Room </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
-                        <div>
-                            <h6>Compétences abordés </h6>
-                        </div>
-                    </div>
-    
+    <!-- POPUP CODING ROOM -->
+    <div class="modal fade" id="modalCodingRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> Coding Room </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <div id="carouselCodingROOM" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselCodingROOM" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselCodingROOM" data-slide-to="1"></li>
+                            <li data-target="#carouselCodingROOM" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/[1]Prog.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[2]HTML.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[3]CSS.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselCodingROOM" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselCodingROOM" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                    <div>
+                        <h6>Compétences abordés </h6>
+                        <p>Gérer le patrimoine informatique</p>
+                        <p>Travailler en mode Projet</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    
-            <!-- POPUP MSURVEY -->
-            <div class="modal fade" id="modalMSurvey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"> MSurvey </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
-                        <div>
-                            <h6>Compétences abordés </h6>
-                        </div>
-                    </div>
-    
+    </div>
+
+    <!-- POPUP MSURVEY -->
+    <div class="modal fade" id="modalMSurvey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger" id="exampleModalLabel"> MSurvey </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <div id="carouselMSurvey" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselMSurvey" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselMSurvey" data-slide-to="1"></li>
+                            <li data-target="#carouselMSurvey" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/[1]Prog.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[2]HTML.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/[3]CSS.jpg" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselMSurvey" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselMSurvey" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                    <div>
+                        <h6>Compétences abordés </h6>
+                        <p>Gérer le patrimoine Informatique</p>
+                        <p>Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                        <p>Travailler en mode projet</p>
+                        <p>Mettre à disposition des utilisateurs un service informatique</p>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
 
 
 
 
-        <!-- POPUP SITE DE REF -->
-        <div class="modal fade" id="modalSiteReference" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- POPUP SITE DE REF -->
+    <div class="modal fade" id="modalSiteReference" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -894,15 +1082,44 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselSiteRef" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselSiteRef" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselSiteRef" data-slide-to="1"></li>
+                            <li data-target="#carouselSiteRef" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/siteRef/php.png" alt="site web php"
+                                        style="width: 100%; height: auto"></div>
+                                <h6 class="text-center mt-5">https://www.php.net/</h6>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/siteRef/mdn.png" alt="mozilla dev network"
+                                        style="width: 100%; height: auto"></div>
+                                <h6 class="text-center mt-5">https://developer.mozilla.org/fr/</h6>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/siteRef/caniuse.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                                <h6 class="text-center mt-5">https://caniuse.com/</h6>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselSiteRef" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselSiteRef" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 
-        <!-- POPUP YOUTUBE -->
-        <div class="modal fade" id="modalYoutube" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- POPUP YOUTUBE -->
+    <div class="modal fade" id="modalYoutube" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -913,15 +1130,47 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselYoutube" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselYoutube" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselYoutube" data-slide-to="1"></li>
+
+                            <li data-target="#carouselYoutube" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/youtube/underscore.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                                <h6 class="text-center mt-5">https://www.youtube.com/@Underscore_/videos</h6>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/youtube/grafikart.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                                <h6 class="text-center mt-5">https://www.youtube.com/@grafikart/videos</h6>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/youtube/benjaminCode.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                                <h6 class="text-center mt-5">https://www.youtube.com/@BenjaminCode/videos</h6>
+
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselYoutube" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselYoutube" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 
-        <!-- POPUP GOOGLE ALERT -->
-        <div class="modal fade" id="modalGoogleAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- POPUP GOOGLE ALERT -->
+    <div class="modal fade" id="modalGoogleAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -932,9 +1181,33 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="/assets/imgs/[4]Js.jpg" alt="fdfdsf" style="width: 100%; height: auto">
+                    <div id="carouselGoogleAlert" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselGoogleAlert" data-slide-to="0" class="active" style="color:black">
+                            </li>
+                            <li data-target="#carouselGoogleAlert" data-slide-to="1"></li>
+                            <li data-target="#carouselGoogleAlert" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="/assets/imgs/googleAlert/alertes.png" alt=""
+                                        style="width: 100%; height: 50%"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/googleAlert/cveZeroDay.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="/assets/imgs/googleAlert/mail.png" alt=""
+                                        style="width: 100%; height: auto"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselGoogleAlert" data-slide="prev">
+                            <i class="fa-solid fa-arrow-left"></i> </a>
+                        <a class="carousel-control-next" href="#carouselGoogleAlert" data-slide="next">
+                            <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -959,10 +1232,7 @@
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-
-    <!-- JohnDoe js -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>    <!-- JohnDoe js -->
     <script src="assets/js/script.js"></script>
 
 </body>
@@ -970,10 +1240,6 @@
 </html>
 
 <!-- A FAIRE :
-    - Popup pour les Projets avec carousel d'image :: https://www.w3schools.com/howto/howto_js_popup.asp
-    - Menu enlever le qui suis je et remplacer par les technologies
     - Faire en sorte que technologies soit seules visibles sur la page
-    - Diminuer l'image d'accueil pour faire en sorte que cela s'arrête au niveau du qui suis je
     - Changer la div des projets en entreprises comme pour les projets scolaires
-    - Si pop up fonctionelle, rajouter exemple pour la veille technologique
 -->

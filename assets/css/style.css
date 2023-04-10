@@ -7016,7 +7016,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: black;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -11419,7 +11419,7 @@ pre .code {
 
 .navbar .brand .brand-img {
   position: absolute;
-  left: 50%;
+  left: 46.5%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -11504,8 +11504,8 @@ pre .code {
 
 .header {
   position: relative;
-  height: 80vh;
-  min-height: 600px;
+  height: 15vh;
+  min-height: 475px;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/dev.png);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/dev.png);
   background-size: cover;
